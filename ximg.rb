@@ -8,6 +8,7 @@ class Ximg < Formula
   # depends_on "cmake" => :build
 
   def install
+      virtualenv_install_with_resources
       bin.install "ximg"
   end
 end
